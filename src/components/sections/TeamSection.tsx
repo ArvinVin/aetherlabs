@@ -28,7 +28,7 @@ const teamMembers = [
   {
     name: 'Jovanus Hartono',
     linkedin: 'https://www.linkedin.com/in/jovanus-hartono-b024b31b8/',
-    image: 'https://ui-avatars.com/api/?name=Jovanus+Hartono&background=0D0D12&color=00f0ff&size=256',
+    image: '/images/our-team/jovanus-hartono.jfif',
   },
 ];
 
