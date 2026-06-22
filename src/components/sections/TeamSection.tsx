@@ -18,12 +18,12 @@ const teamMembers = [
   {
     name: 'Arvin Indrawan',
     linkedin: 'https://www.linkedin.com/in/arvin-indrawan',
-    image: 'https://ui-avatars.com/api/?name=Arvin+Indrawan&background=0D0D12&color=00f0ff&size=256',
+    image: '/images/our-team/arvin-indrawan.png',
   },
   {
     name: 'Muhammad Fatih Abdus Salam',
     linkedin: 'https://www.linkedin.com/in/mfatihas/',
-    image: 'https://ui-avatars.com/api/?name=Muhammad+Fatih&background=0D0D12&color=00f0ff&size=256',
+    image: '/images/our-team/muhammad-fatih-adbus-salam.png',
   },
   {
     name: 'Jovanus Hartono',

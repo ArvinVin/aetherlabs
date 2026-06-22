@@ -15,8 +15,14 @@ function App() {
 
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentHash(window.location.hash);
-      window.scrollTo(0, 0);
+      const newHash = window.location.hash;
+      setCurrentHash(newHash);
+      
+      // Only force scroll to top if navigating to a completely new page view
+      // Otherwise, let the browser naturally scroll to the section anchor (#services, etc)
+      if (['#privacy', '#terms', '', '#'].includes(newHash)) {
+        window.scrollTo(0, 0);
+      }
     };
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
