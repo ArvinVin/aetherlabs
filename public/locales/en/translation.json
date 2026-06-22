@@ -1,0 +1,83 @@
+{
+  "header": {
+    "services": "Services",
+    "projects": "Projects",
+    "tech_stack": "Tech Stack",
+    "contact": "Contact",
+    "cta": "Start a Project"
+  },
+  "hero": {
+    "tagline": "SOFTWARE DEVELOPMENT AGENCY",
+    "headline": "Architecting high-performance digital products.",
+    "subheadline": "AetherLabs specializes in bespoke web and mobile architectures. We bridge the gap between complex engineering and sophisticated design to deliver scalable, mission-critical software.",
+    "primary_cta": "Start a Project",
+    "secondary_cta": "View Our Work"
+  },
+  "services": {
+    "section_title": "WHAT WE DO",
+    "web_dev": {
+      "title": "Web Development",
+      "number": "01",
+      "desc": "High-performance full-stack web applications built with modern frameworks. From e-commerce platforms to enterprise dashboards — we architect solutions that scale."
+    },
+    "mobile_dev": {
+      "title": "Mobile Development",
+      "number": "02",
+      "desc": "Cross-platform mobile experiences that feel truly native. We build apps that your users will love — responsive, performant, and beautifully crafted."
+    },
+    "fivem": {
+      "title": "Custom FiveM Scripts",
+      "number": "03",
+      "desc": "Bespoke, high-performance server scripts and frameworks for FiveM. We build immersive roleplay systems, custom UIs, and optimized backend architectures."
+    }
+  },
+  "projects": {
+    "section_title": "PORTFOLIO",
+    "explore_live": "Explore Live",
+    "view_project": "View Project",
+    "laelume": {
+      "title": "La Élume Beauté",
+      "subtitle": "Luxury Beauty E-Commerce",
+      "desc": "A premium beauty storefront with an editorial, typography-led design language. Features a bespoke design system targeting the Indonesian luxury skincare market.",
+      "live_url": "https://laelumebeaute.com/"
+    },
+    "laelume_admin": {
+      "title": "La Élume Beauté Admin",
+      "subtitle": "E-Commerce Dashboard",
+      "desc": "A comprehensive admin dashboard for e-commerce operations — featuring revenue analytics, inventory management, rich text editing, and role-based access control.",
+      "live_url": "/admin-demo"
+    }
+  },
+  "tech_stack": {
+    "section_title": "OUR STACK"
+  },
+  "team": {
+    "section_title": "OUR TEAM"
+  },
+  "contact": {
+    "section_title": "LET'S BUILD",
+    "headline": "Ready to build something extraordinary?",
+    "subtitle": "Tell us about your project and we'll get back to you within 24 hours.",
+    "direct_contact": "Direct Contact",
+    "email": "arvinindrawan@gmail.com",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "service": "Service",
+      "details": "Tell us about your project",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Sent!",
+      "service_options": {
+        "web": "Web Development",
+        "mobile": "Mobile Development",
+        "fivem": "Custom FiveM Script"
+      }
+    }
+  },
+  "footer": {
+    "quick_links": "Links",
+    "social": "Connect",
+    "rights": "© 2026 AetherLabs. All rights reserved."
+  }
+}

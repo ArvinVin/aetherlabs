@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Charcoal/Zinc palette (sophisticated, not purple-tinted) ─── */
+  --color-background: #0a0a0b;
+  --color-surface: #111113;
+  --color-surface-elevated: #18181b;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #71717a;
+  --color-accent: #00f0ff;          /* Neon cyan from AL logo */
+  --color-accent-light: #67f5ff;
+  --color-accent-glow: rgba(0, 240, 255, 0.15);
+  --color-accent-purple: #8b3dff;  /* Purple from AL logo — gradients only */
+
+  /* ─── Typography ─── */
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* ─── Animations ─── */
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 45s linear infinite;
+  --animate-float-spark: float-spark var(--spark-duration, 15s) ease-in-out infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+  }
+
+  @keyframes float-spark {
+    0% { transform: translateY(0) translateX(0) scale(0.8); opacity: 0; }
+    20% { opacity: var(--spark-opacity, 0.6); }
+    80% { opacity: var(--spark-opacity, 0.6); }
+    100% { transform: translateY(-200px) translateX(var(--spark-x-drift, 20px)) scale(1.2); opacity: 0; }
+  }
+}
+
+/* ─── Base ─── */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  ::selection {
+    background-color: rgba(0, 240, 255, 0.2);
+    color: white;
+  }
+}
+
+/* ─── Components ─── */
+@layer components {
+  /* Display — massive hero headline */
+  .display-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  .heading-1 {
+    @apply font-display text-4xl md:text-6xl font-bold leading-tight;
+    letter-spacing: -0.02em;
+  }
+
+  .heading-2 {
+    @apply font-heading text-2xl md:text-3xl font-semibold leading-snug;
+    letter-spacing: -0.01em;
+  }
+
+  .heading-3 {
+    @apply font-heading text-lg md:text-xl font-medium;
+  }
+
+  .text-body-large {
+    @apply font-body text-lg md:text-xl leading-relaxed text-text-secondary font-light;
+  }
+
+  .text-body {
+    @apply font-body text-base leading-relaxed text-text-secondary;
+  }
+
+  .text-caption {
+    @apply font-mono text-xs md:text-sm tracking-[0.25em] uppercase text-text-secondary font-medium;
+  }
+
+  /* Glassmorphism panel */
+  .glass-panel {
+    background: rgba(17, 17, 19, 0.6);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Luxury input */
+  .input-luxury {
+    @apply w-full bg-white/[0.03] border border-white/[0.08] rounded-lg px-4 py-3.5 text-text-primary placeholder:text-text-secondary/50 focus:outline-none focus:border-accent/40 focus:bg-white/[0.05] transition-all duration-300;
+  }
+
+  /* Animated fade-in-up */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* Gradient mesh background for hero */
+  .gradient-mesh {
+    background: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 240, 255, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 50%, rgba(139, 61, 255, 0.05), transparent),
+      radial-gradient(ellipse 50% 50% at 20% 80%, rgba(0, 240, 255, 0.03), transparent);
+  }
+}

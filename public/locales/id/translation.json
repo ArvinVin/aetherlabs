@@ -1,0 +1,83 @@
+{
+  "header": {
+    "services": "Layanan",
+    "projects": "Proyek",
+    "tech_stack": "Teknologi",
+    "contact": "Kontak",
+    "cta": "Mulai Proyek"
+  },
+  "hero": {
+    "tagline": "AGENSI PENGEMBANGAN PERANGKAT LUNAK",
+    "headline": "Merancang produk digital berkinerja tinggi.",
+    "subheadline": "AetherLabs berspesialisasi dalam arsitektur web dan seluler khusus. Kami menjembatani rekayasa kompleks dengan desain mutakhir untuk menghadirkan perangkat lunak yang skalabel dan andal.",
+    "primary_cta": "Mulai Proyek",
+    "secondary_cta": "Lihat Karya Kami"
+  },
+  "services": {
+    "section_title": "YANG KAMI LAKUKAN",
+    "web_dev": {
+      "title": "Pengembangan Web",
+      "number": "01",
+      "desc": "Aplikasi web full-stack berkinerja tinggi yang dibangun dengan framework modern. Dari platform e-commerce hingga dasbor enterprise — kami merancang solusi yang dapat diskalakan."
+    },
+    "mobile_dev": {
+      "title": "Pengembangan Mobile",
+      "number": "02",
+      "desc": "Pengalaman mobile lintas platform yang terasa benar-benar native. Kami membangun aplikasi yang akan disukai pengguna Anda — responsif, performa tinggi, dan dirancang dengan indah."
+    },
+    "fivem": {
+      "title": "Skrip Kustom FiveM",
+      "number": "03",
+      "desc": "Skrip server dan framework berkinerja tinggi khusus untuk FiveM. Kami membangun sistem roleplay imersif, UI kustom, dan arsitektur backend yang dioptimalkan."
+    }
+  },
+  "projects": {
+    "section_title": "PORTFOLIO",
+    "explore_live": "Jelajahi Langsung",
+    "view_project": "Lihat Proyek",
+    "laelume": {
+      "title": "La Élume",
+      "subtitle": "E-Commerce Kecantikan Mewah",
+      "desc": "Etalase kecantikan premium dengan bahasa desain editorial yang mengedepankan tipografi. Menampilkan sistem desain khusus yang menargetkan pasar perawatan kulit mewah Indonesia.",
+      "live_url": "https://laelumebeaute.com/"
+    },
+    "laelume_admin": {
+      "title": "La Élume Admin",
+      "subtitle": "Dasbor E-Commerce",
+      "desc": "Dasbor admin komprehensif untuk operasi e-commerce — menampilkan analitik pendapatan, manajemen inventaris, editor teks kaya, dan kontrol akses berbasis peran.",
+      "live_url": "/admin-demo"
+    }
+  },
+  "tech_stack": {
+    "section_title": "TEKNOLOGI KAMI"
+  },
+  "team": {
+    "section_title": "TIM KAMI"
+  },
+  "contact": {
+    "section_title": "AYO BANGUN",
+    "headline": "Siap membangun sesuatu yang luar biasa?",
+    "subtitle": "Ceritakan tentang proyek Anda dan kami akan menghubungi Anda dalam 24 jam.",
+    "direct_contact": "Kontak Langsung",
+    "email": "arvinindrawan@gmail.com",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "service": "Layanan",
+      "details": "Ceritakan tentang proyek Anda",
+      "send": "Kirim Pesan",
+      "sending": "Mengirim...",
+      "sent": "Terkirim!",
+      "service_options": {
+        "web": "Pengembangan Web",
+        "mobile": "Pengembangan Mobile",
+        "fivem": "Custom FiveM Script"
+      }
+    }
+  },
+  "footer": {
+    "quick_links": "Tautan",
+    "social": "Terhubung",
+    "rights": "© 2026 AetherLabs. Hak cipta dilindungi."
+  }
+}
