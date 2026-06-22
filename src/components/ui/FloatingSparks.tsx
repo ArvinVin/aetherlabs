@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type { CSSProperties } from 'react';
 
 interface Spark {
   id: number;
@@ -58,7 +59,7 @@ export function FloatingSparks({ count = 30 }: { count?: number }) {
             '--spark-x-drift': `${spark.drift}px`,
             '--spark-opacity': spark.opacity,
             animationDelay: `${spark.delay}s`,
-          } as React.CSSProperties}
+          } as CSSProperties}
         />
       ))}
     </div>

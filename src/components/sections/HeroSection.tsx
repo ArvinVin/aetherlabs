@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import type { CSSProperties, MouseEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useMouseParallax } from '../../hooks/useMouseParallax';
 import { SparkTrail } from '../ui/SparkTrail';
@@ -36,7 +37,7 @@ export function HeroSection() {
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e: MouseEvent) => {
     isHovering.current = true;
     if (logoRef.current) {
       const rect = logoRef.current.getBoundingClientRect();
@@ -100,7 +101,7 @@ export function HeroSection() {
           <div
             ref={logoRef}
             className="relative w-[220px] md:w-[280px] lg:w-[320px] aspect-[1/1] flex items-center justify-center"
-            style={{ '--mouse-x': '-1000px', '--mouse-y': '-1000px' } as React.CSSProperties}
+            style={{ '--mouse-x': '-1000px', '--mouse-y': '-1000px' } as CSSProperties}
           >
             {/* 1. BASE SVG LINE LOGO - Animated Gradient Mask */}
             {/* TO ADJUST POSITION: Change translate-x-0 or translate-y-0 below (e.g. translate-x-[2px] translate-y-[-4px]) */}

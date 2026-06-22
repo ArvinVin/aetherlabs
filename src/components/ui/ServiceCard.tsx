@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { cn } from './LanguageSwitcher'; // Reusing cn utility
+import { cn } from '../../lib/utils'; // Reusing cn utility
 
 interface ServiceCardProps {
   icon: LucideIcon;
