@@ -2,15 +2,15 @@ import { useTranslation } from 'react-i18next';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 const LinkedinIcon = ({ size = 18, className = "" }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
     className={className}
   >
-    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
   </svg>
 );
 
@@ -28,7 +28,7 @@ const teamMembers = [
   {
     name: 'Jovanus Hartono',
     linkedin: 'https://www.linkedin.com/in/jovanus-hartono-b024b31b8/',
-    image: '/images/our-team/jovanus-hartono.jfif',
+    image: '/images/our-team/jovanus-hartono.png',
   },
 ];
 
@@ -48,7 +48,7 @@ export function TeamSection() {
         <div className="flex flex-wrap justify-center gap-8 md:gap-14">
           {teamMembers.map((member, i) => {
             const cardRef = useScrollAnimation({ type: 'fade-up', delay: i * 0.1 });
-            
+
             return (
               <div key={member.name} ref={cardRef}>
                 <a
@@ -66,7 +66,7 @@ export function TeamSection() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#050508]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
+
                     {/* LinkedIn Icon Overlay */}
                     <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-[#0a66c2] text-white flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out shadow-[0_0_20px_rgba(10,102,194,0.4)]">
                       <LinkedinIcon size={16} className="text-white" />
