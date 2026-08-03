@@ -46,6 +46,12 @@
       "subtitle": "E-Commerce Dashboard",
       "desc": "A comprehensive admin dashboard for e-commerce operations — featuring revenue analytics, inventory management, rich text editing, and role-based access control.",
       "live_url": "/admin-demo"
+    },
+    "sentaury": {
+      "title": "Sentaury",
+      "subtitle": "Forza Horizon 6 Racing Community",
+      "desc": "A premium web platform for the Sentaury racing collective — featuring a cinematic hero experience, community gallery, live leaderboards, event management, and Discord OAuth integration for seamless member onboarding.",
+      "live_url": "https://sentaury.id/"
     }
   },
   "tech_stack": {

@@ -46,6 +46,12 @@
       "subtitle": "Dasbor E-Commerce",
       "desc": "Dasbor admin komprehensif untuk operasi e-commerce — menampilkan analitik pendapatan, manajemen inventaris, editor teks kaya, dan kontrol akses berbasis peran.",
       "live_url": "/admin-demo"
+    },
+    "sentaury": {
+      "title": "Sentaury",
+      "subtitle": "Komunitas Balap Forza Horizon 6",
+      "desc": "Platform web premium untuk kolektif balap Sentaury — menampilkan pengalaman hero sinematik, galeri komunitas, papan peringkat langsung, manajemen event, dan integrasi Discord OAuth untuk onboarding anggota yang mulus.",
+      "live_url": "https://sentaury.id/"
     }
   },
   "tech_stack": {

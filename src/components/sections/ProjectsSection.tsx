@@ -99,6 +99,17 @@ export function ProjectsSection() {
             liveLabel={t('projects.view_project')}
             reversed
           />
+
+          {/* Sentaury — Racing Community */}
+          <ProjectBlock
+            title={t('projects.sentaury.title')}
+            subtitle={t('projects.sentaury.subtitle')}
+            description={t('projects.sentaury.desc')}
+            imageSrc="/images/portfolio/sentaury.png"
+            tags={['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Discord OAuth']}
+            liveUrl={t('projects.sentaury.live_url')}
+            liveLabel={t('projects.explore_live')}
+          />
         </div>
       </div>
     </section>
