@@ -3,6 +3,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { ArrowUpRight } from 'lucide-react';
 
 interface ProjectBlockProps {
+  id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -13,13 +14,13 @@ interface ProjectBlockProps {
   reversed?: boolean;
 }
 
-function ProjectBlock({ title, subtitle, description, imageSrc, tags, liveUrl, liveLabel, reversed }: ProjectBlockProps) {
+function ProjectBlock({ id, title, subtitle, description, imageSrc, tags, liveUrl, liveLabel, reversed }: ProjectBlockProps) {
   const imageRef = useScrollAnimation({ type: 'fade-up' });
 
   const isExternal = liveUrl.startsWith('http');
 
   return (
-    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}>
+    <div id={id} className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center scroll-mt-28 ${reversed ? 'lg:[direction:rtl]' : ''}`}>
       {/* Image */}
       <div ref={imageRef} className={`relative overflow-hidden rounded-xl border border-white/[0.06] group ${reversed ? 'lg:[direction:ltr]' : ''}`}>
         <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
@@ -79,6 +80,7 @@ export function ProjectsSection() {
         <div className="flex flex-col gap-32 lg:gap-40">
           {/* La Élume Storefront */}
           <ProjectBlock
+            id="project-laelume"
             title={t('projects.laelume.title')}
             subtitle={t('projects.laelume.subtitle')}
             description={t('projects.laelume.desc')}
@@ -90,6 +92,7 @@ export function ProjectsSection() {
 
           {/* La Élume Admin */}
           <ProjectBlock
+            id="project-laelume-admin"
             title={t('projects.laelume_admin.title')}
             subtitle={t('projects.laelume_admin.subtitle')}
             description={t('projects.laelume_admin.desc')}
@@ -102,6 +105,7 @@ export function ProjectsSection() {
 
           {/* Sentaury — Racing Community */}
           <ProjectBlock
+            id="project-sentaury"
             title={t('projects.sentaury.title')}
             subtitle={t('projects.sentaury.subtitle')}
             description={t('projects.sentaury.desc')}
